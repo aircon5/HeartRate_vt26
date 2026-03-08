@@ -20,9 +20,9 @@ static void periodic_timer_callback(void *arg)
     gpio_set_level(GPIO_NUM_27, 1);
     float adc_val = 0;
 
-    for(int i=0;i<8;i++)
+    for(int i=0;i<8;i++){
         adc_val += adc1_get_raw(ADC1_CHANNEL_4);
-
+    }
     adc_val /= 8;
 
     int dac_val = (int) adc_val >> 4;
