@@ -14,6 +14,8 @@ int freq = 1000;
 #define SDA_PIN 14
 #define SCL_PIN 12
 
+//sofia är inne
+
 //Callback for how often you sample.
 static void periodic_timer_callback(void *arg)
 {
